@@ -1,20 +1,39 @@
-import React from 'react';
-import { Route, Link } from 'react-router-dom'
-import Home from '../home'
-import About from '../about'
+import React from "react";
+import { Route } from "react-router-dom";
+import Home from "../home";
+import theme from "../../theme";
+import Hero from "../../components/Hero";
+import Skills from "../../components/Skills";
+import { MuiThemeProvider, withStyles } from "material-ui/styles";
 
-const App = () => (
-  <div>
-    <header>
-      <Link to="/">Home</Link>
-      <Link to="/about-us">About</Link>
-    </header>
+const times = 2;
 
-    <main>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/about-us" component={About} />
-    </main>
-  </div>
-)
+const styles = theme => ({
+  content: {
+    flexGrow: 1,
+    padding: theme.spacing.unit * times,
+    background: theme.palette.background.default,
+    height: `calc(100% - ${theme.spacing.unit * times * 2}px)`
+  },
+  fullHeight: {
+    height: "100%"
+  },
+  heroWrapper: {
+    height: 300,
+    background: theme.palette.primary[500]
+  }
+});
 
-export default App
+const App = ({ classes }) => (
+  <MuiThemeProvider theme={theme}>
+    <div className={classes.fullHeight}>
+      <Hero />
+      <main className={classes.content}>
+        <Skills />
+        <Route exact path="/" component={Home} />
+      </main>
+    </div>
+  </MuiThemeProvider>
+);
+
+export default withStyles(styles)(App);
