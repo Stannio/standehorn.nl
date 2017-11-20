@@ -1,10 +1,10 @@
-import projects from "../data/projects";
+import skills from "../data/skills";
 
 const ACTION_HANDLERS = {};
 const initialState = {
-  projects: projects
+  skills: skills
 };
-export const projectReducer = (state = initialState, action) => {
+export const skillsReducer = (state = initialState, action) => {
   const handler = ACTION_HANDLERS[action.type];
   return handler ? handler(state, action) : state;
 };

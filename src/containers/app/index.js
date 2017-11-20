@@ -24,12 +24,12 @@ const styles = theme => ({
   }
 });
 
-const App = ({ classes }) => (
+const App = ({ classes, skills }) => (
   <MuiThemeProvider theme={theme}>
     <div className={classes.fullHeight}>
       <Hero />
       <main className={classes.content}>
-        <Skills />
+        <Skills skills={skills} />
         <Route exact path="/" component={Home} />
       </main>
     </div>
