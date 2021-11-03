@@ -14,15 +14,16 @@ const Home: NextPage = () => {
               Full-stack developer
             </h1>
           </div>
-          <div className="col-span-2 place-self-center">
-            <Image
-              src={StanImage}
-              className="rounded-full shadow-lg"
-              placeholder="blur"
-              alt="Stan"
-              height={1080}
-              width={1080}
-            />
+          <div className="col-span-1 place-self-center">
+            <div className="h-auto w-64">
+              <Image
+                src={StanImage}
+                className="rounded-full shadow-lg"
+                placeholder="blur"
+                alt="Stan"
+                layout="responsive"
+              />
+            </div>
           </div>
         </div>
       </div>
