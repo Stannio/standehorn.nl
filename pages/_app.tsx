@@ -5,7 +5,7 @@ import { NextSeo } from "next-seo";
 
 function PortfolioApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider attribute='class' defaultTheme='system'>
+    <ThemeProvider attribute='class' defaultTheme='dark'>
       <NextSeo
         title='Portfolio • Stan'
         description={`A showcase of Stan's portfolio`}

@@ -11,18 +11,17 @@ interface DarkModeOption {
 const options = [
   { name: "Dark", value: "dark" },
   { name: "Light", value: "light" },
-  { name: "System", value: "system" },
 ];
 
 const DarkModeToggle = () => {
-  const [selected, setSelected] = useState(options[2]);
+  const [selected, setSelected] = useState(options[0]);
   const { theme, setTheme } = useTheme();
   const setDarkMode = (option: DarkModeOption) => {
     setSelected(option);
     setTheme(option.value);
   };
   return (
-    <div className='absolute w-36 lg:-right-40 top-2'>
+    <div className='w-36'>
       <Listbox value={selected} onChange={setDarkMode}>
         <div className='relative mt-1'>
           <Listbox.Button className='relative w-full py-2 pl-10 pr-10 text-left text-white bg-gray-900 rounded-lg shadow-md cursor-default dark:bg-white dark:text-black focus:outline-none focus-visible:ring-2 focus-visible:ring-opacity-75 focus-visible:ring-white focus-visible:ring-offset-orange-300 focus-visible:ring-offset-2 focus-visible:border-indigo-500 sm:text-sm'>

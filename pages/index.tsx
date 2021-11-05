@@ -3,7 +3,7 @@ import Navbar from "../components/navigation/Navbar";
 import Image from "next/image";
 import StanImage from "../public/img/stan.jpg";
 import Tags from "../components/Tags";
-import DarkModeToggle from "../components/theme/DarkModeToggle";
+import Footer from "../components/navigation/Footer";
 
 const Home: NextPage = () => {
   return (
@@ -34,6 +34,7 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
