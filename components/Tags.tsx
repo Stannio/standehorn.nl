@@ -14,7 +14,7 @@ const TagMap = {
   react: "bg-gray-700 text-react hover:text-gray-700 hover:bg-react",
 };
 
-const Tag = ({ text, variant }: TagProps): ReactElement => {
+export const Tag = ({ text, variant }: TagProps): ReactElement => {
   const className = TagMap[variant];
   return (
     <div
