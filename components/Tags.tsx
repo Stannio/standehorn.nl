@@ -1,6 +1,6 @@
 import type { ReactElement } from "react";
 
-interface TagProps {
+export interface TagProps {
   text: string;
   variant: keyof typeof TagMap;
 }
@@ -13,6 +13,7 @@ const TagMap = {
   graphql: "bg-gray-100 text-graphql hover:text-gray-100 hover:bg-graphql",
   react: "bg-gray-700 text-react hover:text-gray-700 hover:bg-react",
   go: "bg-gray-600 text-go hover:bg-go hover:text-gray-600 font-bold",
+  mysql: "bg-gray-200 text-mysql hover:bg-mysql hover:text-gray-200 font-bold",
 };
 
 export const Tag = ({ text, variant }: TagProps): ReactElement => {
@@ -29,7 +30,7 @@ export const Tag = ({ text, variant }: TagProps): ReactElement => {
 const Tags = () => {
   return (
     <div className="flex flex-wrap mt-3">
-      <Tag text="GO" variant="go" />
+      <Tag text="Go" variant="go" />
       <Tag text="Typescript" variant="ts" />
       <Tag text="JS" variant="js" />
       <Tag text="React" variant="react" />

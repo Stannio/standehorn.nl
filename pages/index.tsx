@@ -4,6 +4,8 @@ import Image from "next/image";
 import StanImage from "../public/img/stan.jpg";
 import Tags from "../components/Tags";
 import Footer from "../components/navigation/Footer";
+import cards from "../data/cards";
+import Card from "../components/card/Card";
 
 const Home: NextPage = () => {
   return (
@@ -45,6 +47,18 @@ const Home: NextPage = () => {
               applications. I&#39;m currently working at itemlost.com
             </p>
           </div>
+        </div>
+      </div>
+      <div className="container mx-auto mb-4  ">
+        <div className="grid grid-cols-6 gap-4">
+          {cards.map((card, key) => (
+            <Card
+              key={key}
+              title={card.title}
+              description={card.description}
+              tags={card.tags}
+            />
+          ))}
         </div>
       </div>
       <Footer />

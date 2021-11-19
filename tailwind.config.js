@@ -12,6 +12,7 @@ module.exports = {
         react: "#61DBFB",
         graphql: "#e10098",
         go: "#00FFFF",
+        mysql: "#E48E01",
       },
     },
   },
