@@ -11,6 +11,7 @@ module.exports = {
       colors: {
         react: "#61DBFB",
         graphql: "#e10098",
+        go: "#00FFFF",
       },
     },
   },
@@ -21,5 +22,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };

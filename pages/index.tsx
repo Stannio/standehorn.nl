@@ -34,17 +34,15 @@ const Home: NextPage = () => {
           </div>
         </div>
       </div>
-      <div className="container mx-auto">
+      <div className="container mx-auto mb-8">
         <div className="grid grid-cols-6 gap-8">
-          <div className="self-center col-span-6 lg:col-span-3 xl:col-span-2 xl:col-start-2">
-            <h1 className="font-mono text-6xl font-semibold leading-tight text-black border-b border-gray-700 dark:text-white">
+          <div className="self-center col-span-6 prose lg:col-span-3 xl:col-span-2 xl:col-start-2">
+            <h1 className="font-mono text-6xl font-semibold leading-tight text-black dark:text-white">
               About me
             </h1>
-            <p className="my-6 font-sans font-semibold text-black dark:text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus,
-              et laboriosam. Provident nesciunt a necessitatibus et nulla
-              debitis beatae, saepe laboriosam iure iste, deleniti non qui
-              earum, laborum ullam voluptate.
+            <p className="my-6 font-sans font-medium text-black dark:text-white">
+              I&#39;m a full-stack developer with a passion for building
+              applications. I&#39;m currently working at itemlost.com
             </p>
           </div>
         </div>
