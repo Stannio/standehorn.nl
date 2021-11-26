@@ -11,7 +11,30 @@ export const cards: CardProps[] = [
         variant: "go",
       },
       {
-        text: "MySql",
+        text: "MySQL",
+        variant: "mysql",
+      },
+    ],
+  },
+  {
+    title: "SaaS Asset tracker",
+    description:
+      "A SaaS that allows clients to track their assets using bluetooth labels and gateways",
+    tags: [
+      {
+        text: "Typescript",
+        variant: "ts",
+      },
+      {
+        text: "React",
+        variant: "react",
+      },
+      {
+        text: "Elastic search",
+        variant: "es",
+      },
+      {
+        text: "MySQL",
         variant: "mysql",
       },
     ],
